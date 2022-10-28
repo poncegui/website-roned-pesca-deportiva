@@ -1019,7 +1019,7 @@ header .icons #menu-bars {
 
 .contact .row form textarea:focus,
 .contact .row form .inputBox input:focus {
-  background-color: var(--secondary);
+  background-color: rgb(247, 247, 227);
 }
 
 /* .footer .footer-container{

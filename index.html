@@ -844,7 +844,7 @@
     <form action="" id="form">
         <div class="inputBox">
             <input type="text" placeholder="nombre" name="name" required>
-            <input type="number" placeholder="numbero" name="phone">
+            <input type="number" placeholder="numero" name="phone">
         </div>
         <div class="inputBox">
             <input type="email" placeholder="email" name="email" required>
@@ -852,7 +852,7 @@
         </div>
         <textarea name="message" placeholder="mensaje" required id="" cols="30" rows="10"class="inputs"></textarea>
         <input type="submit" value="enviar mensaje" class="btn">
-        <a href="mailto:marta.ponceg@gmail.com" id="btn"></a>
+        <a href="mailto:info@roned.es" id="btn"></a>
     </form>
 
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386961.17584610515!2d0.7106675138558154!3d40.73707278144573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a10d93b9975101%3A0xcade7358749f3e4!2sRoned%20Sportfishing!5e0!3m2!1sfr!2snl!4v1642360461400!5m2!1sfr!2snl" allowfullscreen="" loading="lazy"></iframe>
@@ -872,7 +872,7 @@
 <section class="home" id="booking">
     
 
-    <form action="">
+    <form action="" id="formBooking">
 
         <h1>FORMULARIO DE RESERVA</h1>
         <h2>Roned Pesca Deportiva</h2>
@@ -883,81 +883,84 @@
         </div>
 
         <div class="inputBox">
-            <input type="search" name="" placeholder="nombre pescador" id="" required>
-            <input type="date" name="fecha" min="2022-11-01" max="2030-11-01" step="2" required/>
-            <select name="dateStart" id="dateStart">
-                <option value="" disabled hidden selected>Número de Pescadores</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
+            <input type="search" name="name" placeholder="nombre pescador" id="name" >
+            <input type="date" name="dateStart" min="2022-11-01" max="2030-11-01" step="" />
+            <select name="pescadores" id="pescadores">
+                <option  name="pescadores" value="" disabled hidden selected>Número de Pescadores</option>
+                <option name="pescadores" value="1">1</option>
+                <option name="pescadores"value="2">2</option>
+                <option name="pescadores"value="3">3</option>
+                <option name="pescadores"value="4">4</option>
+                <option name="pescadores"value="5">5</option>
+                <option name="pescadores"value="6">6</option>
+                <option name="pescadores"value="7">7</option>
+                <option name="pescadores"value="8">8</option>
+                <option name="pescadores"value="9">9</option>
+                <option name="pescadores"value="10">10</option>
             </select>
-            <input type="dateEnd" name="fecha" id="dateEnd"min="2022-11-01" max="2030-11-01"  step="2" required/>
+            <input type="date" name="dateEnd" id="dateEnd"min="2022-11-01" max="2030-11-01"  step="" />
             <select name="days" id="days">
-                <option value="days" disabled hidden selected>Días de Pesca</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
+                <option name="days"value="days" disabled hidden selected>Días de Pesca</option>
+                <option name="days"value="1">1</option>
+                <option name="days"value="2">2</option>
+                <option name="days"value="3">3</option>
+                <option name="days"value="4">4</option>
+                <option name="days"value="5">5</option>
+                <option name="days"value="6">6</option>
+                <option name="days"value="7">7</option>
+                <option name="days"value="8">8</option>
+                <option name="days"value="9">9</option>
+                <option name="days"value="10">10</option>
+                <option name="days"value="11">11</option>
+                <option name="days" value="12">12</option>
+                <option name="days"value="13">13</option>
+                <option name="days"value="14">14</option>
             </select>
-            <select name="hotel" id="hotel" required>
-                <option value="" disabled hidden selected>Alojamiento</option>
-                <option value="monica">Villa Mónica</option>
-                <option value="palmeras">Villa Las Palmeras</option>
-                <option value="rodado">Apartamento Rodado</option>
-                <option value="vista-almar">Apartamento Vista al Mar</option>
+            <select name="hotel" id="hotel" >
+                <option name="hotel"value="" disabled hidden selected>Alojamiento</option>
+                <option name="hotel"value="monica">Villa Mónica</option>
+                <option name="hotel"value="palmeras">Villa Las Palmeras</option>
+                <option name="hotel"value="rodado">Apartamento Rodado</option>
+                <option name="hotel"value="vista-almar">Apartamento Vista al Mar</option>
+                <option name="hotel"value="vista-almar">No necesito alojamiento</option>
           
             </select>
-            <select name="pesca" id="pesca" required>
-                <option value="" disabled hidden selected>Qué Pez</option>
-                <option value="Pesca en el mar">Pesca en el mar</option>
-                <option value="Pesca de Bagre">Pesca de Bagre</option>
-                <option value="Combinación">Combinación</option>
-                <option value="Consulta con Ron">Consulta con Ron</option>
+            <select name="pesca" id="pesca" >
+                <option name="pesca"value="" disabled hidden selected>Qué Pez</option>
+                <option name="pesca"value="Pesca en el mar">Pesca en el mar</option>
+                <option name="pesca"value="Pesca de Bagre">Pesca de Bagre</option>
+                <option name="pesca"value="Combinación">Combinación</option>
+                <option name="pesca"value="Consulta con Ron">Consulta con Ron</option>
           
             </select>
-            <select name="bedroom" id="bedroom" required>
-                <option value="" disabled hidden selected>Habitaciones</option>
-                <option value="1 bedroom">1 habitación</option>
-                <option value="2 bedroom">2 habitaciones</option>
-                <option value="3 bedroom">3 habitaciones</option>
-                <option value="4 bedroom">4 habitaciones</option>
-                <option value="5 bedroom">5 habitaciones</option>
+            <select name="bedroom" id="bedroom" >
+                <option name="bedroom"value="" disabled hidden selected>Habitaciones</option>
+                <option name="bedroom"value="1 bedroom">0 habitaciones</option>
+                <option name="bedroom"value="1 bedroom">1 habitación</option>
+                <option name="bedroom"value="2 bedroom">2 habitaciones</option>
+                <option name="bedroom"value="3 bedroom">3 habitaciones</option>
+                <option name="bedroom"value="4 bedroom">4 habitaciones</option>
+                <option name="bedroom"value="5 bedroom">5 habitaciones</option>
             </select>
-            <select name="rentBoat" id="rentBoat" required>
-                <option value="" disabled hidden selected>Alquilar Barco</option>
-                <option value="Si">Si</option>
-                <option value="No">No</option>
+            <select name="rentBoat" id="rentBoat" >
+                <option name="rentBoat"value="" disabled hidden selected>Alquilar Barco</option>
+                <option name="rentBoat"value="Si">Si</option>
+                <option name="rentBoat"value="No">No</option>
               
             </select>
-            <select name="bathroom" id="bathroom" required>
-                <option value="" disabled hidden selected>Baños</option>
-                <option value="1 bathroom">1 baño</option>
-                <option value="2 bathroom">2 baños</option>
-                <option value="3 bathroom">3 baños</option>
-                <option value="4 bathroom">4 baños</option>
-                <option value="5 bathroom">5 baños</option>
+            <select name="bathroom" id="bathroom" >
+                <option name="bathroom"value="" disabled hidden selected>Baños</option>
+                <option name="bathroom"value="1 bathroom">0 baños</option>
+                <option name="bathroom"value="1 bathroom">1 baño</option>
+                <option name="bathroom"value="2 bathroom">2 baños</option>
+                <option name="bathroom"value="3 bathroom">3 baños</option>
+                <option name="bathroom"value="4 bathroom">4 baños</option>
+                <option name="bathroom"value="5 bathroom">5 baños</option>
             </select>
         </div>
 
         <input type="submit" value="enviar solicitud" class="btn">
-        <a href="mailto:marta.ponceg@gmail.com" id="btn"></a>
+        <a href="mailto:info@roned.es" id="btnBooking"></a>
     </form>
 
 </section>
@@ -971,9 +974,6 @@
             <a href="#home"><img src="icons/chevron-up-solid.svg" class="footer__btn--arrow" alt="main menu"
                             title="main menu"></a>
     </div>
-
-
-
         <div class="row">
             <div class="footer-col">
                 <h4>contacto</h4>
@@ -1025,6 +1025,8 @@
 
 <script>
 
+
+// JAVASCRIPT NAVBAR
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
@@ -1038,20 +1040,41 @@ window.onscroll = () =>{
     menu.classList.remove('fa-times');
 }
 
-const $form = document.querySelector('#form')
-    const $buttonMailto = document.querySelector('#btn')
 
-    $form.addEventListener('submit', handleSubmit)
 
-    function handleSubmit(event) {
-      event.preventDefault()
-      const form = new FormData(this)
-      $buttonMailto.setAttribute('href', `mailto:marta.ponceg@gmail.com?subject=subject ${form.get('name')}  &body=${form.get('message')}correo ${form.get('email')}`)
-      $buttonMailto.click()
+// JAVASCRIPT FORMULARIOS
+
+    const $form = document.querySelector('#form');  
+    const $formBooking = document.querySelector('#formBooking');
+    const $buttonMailto = document.querySelector('#btn');
+    const $buttonBooking = document.querySelector('#btnBooking');
+
+  
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = new FormData(this);
+      $buttonMailto.setAttribute('href', `mailto:info@roned.es?subject=subject ${form.get('name')}  &body= CONSULTA  ${form.get('message')} TELÉFONO  ${form.get('phone')}`)
+      $buttonMailto.click();
+      this.reset();
+    
+    }
+
+    function handleSubmitBooking(e){
+      e.preventDefault();
+      const formBooking = new FormData(this);
+      $buttonBooking.setAttribute('href', `mailto:info@roned.es?subject=subject ${formBooking.get('name')}  
+      &body= FECHA ENTRADA  ${formBooking.get('dateStart')}   FECHA SALIDA  ${formBooking.get('dateEnd')}  PERSONAS  ${formBooking.get('pescadores')}   
+      DÍAS ${formBooking.get('days')}   TIPO DE PESCA  ${formBooking.get('pesca')}  ALOJAMIENTO  ${formBooking.get('hotel')}  
+      HABITACIONES  ${formBooking.get('bedroom')}   BAÑOS  ${formBooking.get('bathroom')}  ALQUIER BARCO?  ${formBooking.get('rentBoat')}`)
+      $buttonBooking.click();
+      this.reset();
+
     }
 
 
-
+    $form.addEventListener('submit', handleSubmit);
+    $formBooking.addEventListener('submit', handleSubmitBooking);
 
 </script>
 
