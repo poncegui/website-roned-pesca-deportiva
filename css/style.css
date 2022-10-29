@@ -127,7 +127,7 @@ section {
   @media (max-width: 767px) {
     .slogan__text h1{
       font-family: 'Great Vibes', cursive;
-      font-size: 500px;
+      font-size: 50px;
       color: var(--secondary);
   
     }
@@ -140,13 +140,9 @@ section {
   
   @media (max-width: 400px) {
     .slogan__text h1{
-    
       font-size: 40px;
-    
-  
     }
     .slogan__text h2{
-  
       font-size: 20px;
  
     }
@@ -297,7 +293,7 @@ header .icons #menu-bars {
 }
 
 /* NUESTROS BARCOS */
-
+  
 .services .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -948,6 +944,18 @@ align-items: center;
   padding-top: 0.5rem;
 }
 
+
+@media (max-width: 768px) {
+  .featured .box-container .box .content .location p {
+    font-size: var(--h3-size);
+  }
+}
+
+
+
+
+
+
 .featured .box-container .box .content .details {
   padding: 0.5rem 0;
   display: flex;
@@ -1270,9 +1278,13 @@ align-items: center;
 
 
 .flip-cards {
-  
+  width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-around;
+    margin: 5% 0%;
+  
 }
 
 @media (max-width: 767px) {
@@ -1305,7 +1317,7 @@ align-items: center;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .card .front {
@@ -1329,6 +1341,8 @@ align-items: center;
     color: #fff;
     background: rgba(0,0,0,.4);
     text-align: center;
+    font-size: var(--h2-size);
+    font-weight: 200;
 }
 
 .card .back {
@@ -1344,7 +1358,7 @@ align-items: center;
 }
 
 .card .back .link {
-    border-top: solid 1px #f3f3f3;
+    border-top: solid 1px var(--aux);
     height: 50px;
     line-height: 50px;
 }
@@ -1485,7 +1499,7 @@ align-items: center;
 
   .container{
     max-width: 1170px;
-    height: 12vh;
+   
     margin:auto;
   }
   .row{

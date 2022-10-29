@@ -14,7 +14,6 @@ window.onscroll = () =>{
 }
 
 
-
 // JAVASCRIPT FORMULARIOS
 
     const $form = document.querySelector('#form');  
