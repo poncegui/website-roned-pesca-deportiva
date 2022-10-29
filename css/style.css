@@ -1139,7 +1139,7 @@ header .icons #menu-bars {
 .home {
     min-height: 100vh;
     background: linear-gradient(rgba(87, 89, 95, 0.85), rgba(75, 77, 81, 0.85)),
-  url(../img/quéPez-section/serviola.jpg) no-repeat;
+  url(../img/quePez-section/serviola.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1311,8 +1311,6 @@ header .icons #menu-bars {
 
 
 
-.pesca {
-}
 .pesca-container {
   margin: 10% 0;
 }
@@ -1375,7 +1373,44 @@ header .icons #menu-bars {
   
   /* <!-- FORMULARIO section ends --> */
   
-  
+/*Boton de ir arriba*/
+
+#button-up{
+  width: 40px;
+  height: 40px;
+  background: #46a2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0);
+}
+
+#button-up:hover{
+  transform: scale(1.1);
+  background-color: rgba(0,0,0,0.3);
+}
+
+@media (max-width: 767px) {
+  #button-up{
+    width: 35px;
+    height:35px;
+    font-size: 14px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+ /*Boton de ir arriba ends --> */
+
+
 /* FOOTER */
 
 .footer {
@@ -1437,30 +1472,7 @@ header .icons #menu-bars {
     background-color: var(--primary);
   }
   
-  .footer__btn {
-    position: absolute;
-    left: 47%;
-    background-color: (var(--primary));
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--primary);
-    box-shadow: black 0px 2px 6px;
-    transform: translateY(-90px);
-  }
-  .footer__btn:hover {
-    transform: translateY(-100px);
-    transition: all 0.8s ease-out;
-  }
-  .footer__btn--arrow {
-    transform: translateY(5px);
-    padding: 15px;
-  }
-  
-  /*responsive*/
+    /*responsive*/
   @media (max-width: 767px) {
     .footer-col {
       width: 50%;

@@ -23,7 +23,7 @@
     <a href="#home" class="logo"><span>Pesca</span>Deportiva</a>
 
 
-    <nav class="navbar">
+    <nav class="navbar" id="home">
 
                 <a href="#aboutUs">Nosotros</a>
                 <a href="#fishing">Pesca</a>
@@ -191,7 +191,7 @@
             </div>
 
             <div class="item-slide">
-                <img src="img/pesca-section/pesca fondo.jpg">
+                <img src="img/pesca-section/pesca-fondo.jpg">
             </div>
     
 
@@ -227,7 +227,7 @@
 <section class="featured" id="boats">
 
     <div class="titles">
-        <img src="icons/sailboat-solid.svg">
+        <img src="icons/sailboat-solid.svg" alt="">
         <h1 class="heading"> <span>Nuestros</span> Barcos</h1>
     
     </div>
@@ -410,7 +410,7 @@
             <div class="box-container">
                 <div class="box">
                     <div class="image-container">
-                        <img src="img/quePez-section/atún.jpg" alt="barcos">
+                        <img src="img/quePez-section/atun.jpg" alt="barcos">
                     </div>
                 </div>
             </div>
@@ -840,13 +840,13 @@
     <form action="" id="form">
         <div class="inputBox">
             <input type="text" placeholder="nombre" name="name" required>
-            <input type="number" placeholder="numero" name="phone">
+            <input type="number" placeholder="numero de teléfono" name="phone">
         </div>
         <div class="inputBox">
             <input type="email" placeholder="email" name="email" required>
             <input type="text" placeholder="asunto" name="subject" required>
         </div>
-        <textarea name="message" placeholder="mensaje" required id="" cols="30" rows="10" class="inputs"></textarea>
+        <textarea name="message" placeholder="mensaje" required id="message" cols="30" rows="10" class="inputs"></textarea>
         <input type="submit" value="enviar mensaje" class="btn">
         <a href="mailto:info@roned.es" id="btn"></a>
     </form>
@@ -882,79 +882,79 @@
         </div>
 
         <div class="inputBox">
-            <input type="search" name="name" placeholder="nombre pescador" id="name" >
-            <input type="date" name="dateStart" min="2022-11-01" max="2030-11-01" step="" />
-            <select name="pescadores" id="pescadores">
-                <option  name="pescadores" value="" disabled hidden selected>Número de Pescadores</option>
+            <input type="search" name="name" placeholder="nombre pescador" id="name" required>
+            <input type="date" name="dateStart" min="2022-11-01" max="2030-11-01" step="" required>
+            <select name="pescadores" id="pescadores" required>
+                <option name="pescadores" value="" disabled hidden selected>Número de Pescadores</option>
                 <option name="pescadores" value="1">1</option>
-                <option name="pescadores"value="2">2</option>
-                <option name="pescadores"value="3">3</option>
-                <option name="pescadores"value="4">4</option>
-                <option name="pescadores"value="5">5</option>
-                <option name="pescadores"value="6">6</option>
-                <option name="pescadores"value="7">7</option>
-                <option name="pescadores"value="8">8</option>
-                <option name="pescadores"value="9">9</option>
-                <option name="pescadores"value="10">10</option>
+                <option name="pescadores" value="2">2</option>
+                <option name="pescadores" value="3">3</option>
+                <option name="pescadores" value="4">4</option>
+                <option name="pescadores" value="5">5</option>
+                <option name="pescadores" value="6">6</option>
+                <option name="pescadores" value="7">7</option>
+                <option name="pescadores" value="8">8</option>
+                <option name="pescadores" value="9">9</option>
+                <option name="pescadores" value="10">10</option>
             </select>
-            <input type="date" name="dateEnd" id="dateEnd"min="2022-11-01" max="2030-11-01"  step="" />
-            <select name="days" id="days">
-                <option name="days"value="days" disabled hidden selected>Días de Pesca</option>
-                <option name="days"value="1">1</option>
-                <option name="days"value="2">2</option>
-                <option name="days"value="3">3</option>
-                <option name="days"value="4">4</option>
-                <option name="days"value="5">5</option>
-                <option name="days"value="6">6</option>
-                <option name="days"value="7">7</option>
-                <option name="days"value="8">8</option>
-                <option name="days"value="9">9</option>
-                <option name="days"value="10">10</option>
-                <option name="days"value="11">11</option>
+            <input type="date" name="dateEnd" id="dateEnd" min="2022-11-01" max="2030-11-01"  step="" required>
+            <select name="days" id="days" required>
+                <option name="days" value="days" disabled hidden selected>Días de Pesca</option>
+                <option name="days" value="1">1</option>
+                <option name="days" value="2">2</option>
+                <option name="days" value="3">3</option>
+                <option name="days" value="4">4</option>
+                <option name="days" value="5">5</option>
+                <option name="days" value="6">6</option>
+                <option name="days" value="7">7</option>
+                <option name="days" value="8">8</option>
+                <option name="days" value="9">9</option>
+                <option name="days" value="10">10</option>
+                <option name="days" value="11">11</option>
                 <option name="days" value="12">12</option>
-                <option name="days"value="13">13</option>
-                <option name="days"value="14">14</option>
+                <option name="days" value="13">13</option>
+                <option name="days" value="14">14</option>
             </select>
-            <select name="hotel" id="hotel" >
-                <option name="hotel"value="" disabled hidden selected>Alojamiento</option>
-                <option name="hotel"value="monica">Villa Mónica</option>
-                <option name="hotel"value="palmeras">Villa Las Palmeras</option>
-                <option name="hotel"value="rodado">Apartamento Rodado</option>
-                <option name="hotel"value="vista-almar">Apartamento Vista al Mar</option>
-                <option name="hotel"value="vista-almar">No necesito alojamiento</option>
+            <select name="hotel" id="hotel" required>
+                <option name="hotel" value="" disabled hidden selected>Alojamiento</option>
+                <option name="hotel" value="monica">Villa Mónica</option>
+                <option name="hotel" value="palmeras">Villa Las Palmeras</option>
+                <option name="hotel" value="rodado">Apartamento Rodado</option>
+                <option name="hotel" value="vista-almar">Apartamento Vista al Mar</option>
+                <option name="hotel" value="vista-almar">No necesito alojamiento</option>
           
             </select>
-            <select name="pesca" id="pesca" >
-                <option name="pesca"value="" disabled hidden selected>que Pez</option>
-                <option name="pesca"value="Pesca en el mar">Pesca en el mar</option>
-                <option name="pesca"value="Pesca de Bagre">Pesca de Bagre</option>
-                <option name="pesca"value="Combinación">Combinación</option>
-                <option name="pesca"value="Consulta con Ron">Consulta con Ron</option>
+            <select name="pesca" id="pesca" required>
+                <option name="pesca" value="" disabled hidden selected>que Pez</option>
+                <option name="pesca" value="Pesca en el mar">Pesca en el mar</option>
+                <option name="pesca" value="Pesca de Bagre">Pesca de Bagre</option>
+                <option name="pesca" value="Combinación">Combinación</option>
+                <option name="pesca" value="Consulta con Ron">Consulta con Ron</option>
           
             </select>
-            <select name="bedroom" id="bedroom" >
-                <option name="bedroom"value="" disabled hidden selected>Habitaciones</option>
-                <option name="bedroom"value="1 bedroom">0 habitaciones</option>
-                <option name="bedroom"value="1 bedroom">1 habitación</option>
-                <option name="bedroom"value="2 bedroom">2 habitaciones</option>
-                <option name="bedroom"value="3 bedroom">3 habitaciones</option>
-                <option name="bedroom"value="4 bedroom">4 habitaciones</option>
-                <option name="bedroom"value="5 bedroom">5 habitaciones</option>
+            <select name="bedroom" id="bedroom" required >
+                <option name="bedroom" value="" disabled hidden selected>Habitaciones</option>
+                <option name="bedroom" value="1 bedroom">0 habitaciones</option>
+                <option name="bedroom" value="1 bedroom">1 habitación</option>
+                <option name="bedroom" value="2 bedroom">2 habitaciones</option>
+                <option name="bedroom" value="3 bedroom">3 habitaciones</option>
+                <option name="bedroom" value="4 bedroom">4 habitaciones</option>
+                <option name="bedroom" value="5 bedroom">5 habitaciones</option>
             </select>
             <select name="rentBoat" id="rentBoat" >
-                <option name="rentBoat"value="" disabled hidden selected>Alquilar Barco</option>
-                <option name="rentBoat"value="Si">Si</option>
-                <option name="rentBoat"value="No">No</option>
+                <option name="rentBoat" value="" disabled hidden selected>Alquilar Barco</option>
+                <option name="rentBoat" value="Si">Si</option>
+                <option name="rentBoat" value="No">No</option>
               
             </select>
-            <select name="bathroom" id="bathroom" >
-                <option name="bathroom"value="" disabled hidden selected>Baños</option>
-                <option name="bathroom"value="1 bathroom">0 baños</option>
-                <option name="bathroom"value="1 bathroom">1 baño</option>
-                <option name="bathroom"value="2 bathroom">2 baños</option>
-                <option name="bathroom"value="3 bathroom">3 baños</option>
-                <option name="bathroom"value="4 bathroom">4 baños</option>
-                <option name="bathroom"value="5 bathroom">5 baños</option>
+            <select name="bathroom" id="bathroom" required>
+                <option id="bathroom" value="" disabled hidden selected>Baños</option>
+                <option name="bathroom" value="1 bathroom">0 baños</option>
+                <option name="bathroom" value="1 bathroom">1 baño</option>
+                <option name="bathroom" value="2 bathroom">2 baños</option>
+                <option name="bathroom" value="3 bathroom">3 baños</option>
+                <option name="bathroom" value="4 bathroom">4 baños</option>
+                <option name="bathroom" value="5 bathroom">5 baños</option>
             </select>
         </div>
 
@@ -967,12 +967,17 @@
 <!-- Formulario section ends -->
 
 <!-- footer section starts  -->
+<div id="button-up">
+    <i class="fas fa-chevron-up"></i>
+    <a
+                        href="#home"></a>
+                    
+                    
+</div>
+
 <footer class="footer">
     <div class="container">
-        <div class="footer__btn">
-            <a href="#home"><img src="icons/chevron-up-solid.svg" class="footer__btn--arrow" alt="main menu"
-                            title="main menu"></a>
-    </div>
+
         <div class="row">
             <div class="footer-col">
                 <h4>contacto</h4>
@@ -1021,61 +1026,10 @@
     </div>
 
 </footer>
-
-<script>
-
-
-// JAVASCRIPT NAVBAR
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    navbar.classList.toggle('active');
-    menu.classList.toggle('fa-times');
-}
-
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-    menu.classList.remove('fa-times');
-}
+<script src="./js/main.js"></script>
 
 
 
-// JAVASCRIPT FORMULARIOS
-
-    const $form = document.querySelector('#form');  
-    const $formBooking = document.querySelector('#formBooking');
-    const $buttonMailto = document.querySelector('#btn');
-    const $buttonBooking = document.querySelector('#btnBooking');
-
-  
-
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = new FormData(this);
-      $buttonMailto.setAttribute('href', `mailto:info@roned.es?subject=subject ${form.get('name')}  &body= CONSULTA  ${form.get('message')} TELÉFONO  ${form.get('phone')}`)
-      $buttonMailto.click();
-      this.reset();
-    
-    }
-
-    function handleSubmitBooking(e){
-      e.preventDefault();
-      const formBooking = new FormData(this);
-      $buttonBooking.setAttribute('href', `mailto:info@roned.es?subject=subject ${formBooking.get('name')}  
-      &body= FECHA ENTRADA  ${formBooking.get('dateStart')}   FECHA SALIDA  ${formBooking.get('dateEnd')}  PERSONAS  ${formBooking.get('pescadores')}   
-      DÍAS ${formBooking.get('days')}   TIPO DE PESCA  ${formBooking.get('pesca')}  ALOJAMIENTO  ${formBooking.get('hotel')}  
-      HABITACIONES  ${formBooking.get('bedroom')}   BAÑOS  ${formBooking.get('bathroom')}  ALQUIER BARCO?  ${formBooking.get('rentBoat')}`)
-      $buttonBooking.click();
-      this.reset();
-
-    }
-
-
-    $form.addEventListener('submit', handleSubmit);
-    $formBooking.addEventListener('submit', handleSubmitBooking);
-
-</script>
 
 </body>
 </html>
