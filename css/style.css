@@ -1708,8 +1708,14 @@ ul {
   border-radius: 2rem;
 }
 .featured-right {
+  
   display: flex;
   justify-content: flex-end;
+}
+.featured-Pesca {
+  
+  display: flex;
+  flex-direction: column;
 }
 .img {
   min-width: 35rem;
@@ -1843,6 +1849,12 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .box-tiposPesca{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .post {
     padding: 2.5rem;
     flex-direction: column;
@@ -1878,7 +1890,22 @@ ul {
   }
 }
 
+.box-tiposPesca{
 
+}
+.titulo-Pesca {
+  font-size: var(--h2-size);
+
+  color: var(--secondary);
+}
+
+.fecha-right-Pesca {
+  font-size: var(--h3-size);
+}
+
+.descripcion-Pesca {
+  font-size: var(--18px-size);
+}
 /* <!-- Bloque Tipos de Pesca stars
 <section class="featured" id="services-box1">
     <div class="titles"> -->
@@ -1923,14 +1950,6 @@ ul {
 </section> -->
         
 <!-- Bloque Tipos de Pesca ends --> */
-
-
-
-
-
-
-
-
 
 
 
