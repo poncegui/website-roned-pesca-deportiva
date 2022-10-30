@@ -25,6 +25,7 @@
   text-decoration: none;
 }
 
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -161,15 +162,28 @@ section {
 
 .languages {
   width: 100%;
-  height: 15vh;
   position: absolute;
-  transform: translateY(100px);
+  top: 1%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   z-index: 10;
   justify-content: flex-start;
-  margin-bottom: 15%;
+
 }
+
+@media (min-width: 767px) {
+  .languages {
+    top:12%;
+    right: -5%;
+  }
+
+  .flags-item img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
 .flags-item {
   cursor: pointer;
   margin-right: 2%;
@@ -240,12 +254,15 @@ header {
 
 header .logo {
   font-weight: bolder;
-  font-size: 2.5rem;
-  color: var(--auxDark);
+  font-size: var(--h2-size);
+  color: var(--aux);
 }
 
 header .logo span {
-  color: var(--primary);
+
+  font-weight: 200;
+  font-size: var(--h2-size);
+  color: var(--aux);
 }
 
 header  {
@@ -302,9 +319,15 @@ header .icons #menu-bars {
 
 @media (max-width: 768px) {
   header .icons #menu-bars {
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-
+  #menu-bars{
+    height: 25px;
+    width: 25px;
+  }
   header .navbar {
     position: absolute;
     left: 0;
@@ -1856,24 +1879,50 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* <!-- Bloque Tipos de Pesca stars
+<section class="featured" id="services-box1">
+    <div class="titles"> -->
+        <!-- <img src="icons/pez-espada.png" alt="" class="pez espada"> -->
+        <!-- <h1 class="heading"><span>Tipos de Pesca</span> </h1></div>
+        <section class="featured-right" id="services-box2">
+            <div class="post-right">
+              <div class="img-right"><img src="img/pesca-section/pesca-fondo.jpg" alt=""></div>
+              <div class="info-right">
+                <h1 class="titulo-Pesca">Pesca Fluvial</h1>
+                <div class="fecha-Pesca">xxxxxxxxxxxx</div>
+                <p class="descripcion-Pesca">Pasa un día inolvidable en el Delta del Ebro y disfruta de una pesca tranquila sin navegación comercial.</p>
+                <button class="btn-right"><a href="#fishing">saber más</a></button>
+              </div>
+            </div>
+          </section>
+        <section class="featured-right" id="services-box2">
+          <div class="post-right">
+            <div class="img-right"><img src="img/pesca-section/pesca-fondo.jpg" alt=""></div>
+            <div class="info-right">
+              <h1 class="titulo-Pesca">Pesca Deportiva</h1>
+              <div class="fecha-Pesca">xxxxxxxxxxxx</div>
+              <p class="descripcion-Pesca">Trabaja en equipo para atrapar al Monstruo del Ebro. 
+                Las condiciones climatologícas y el mar en calma nos permiten 
+                salidas casi todos los días del año.</p>
+              <button class="btn-right"><a href="#fishing">saber más</a></button>
+            </div>
+          </div>
+        </section>
+        <section class="featured-right" id="services-box2">
+            <div class="post-right">
+              <div class="img-right"><img src="img/pesca-section/pesca-fondo.jpg" alt=""></div>
+              <div class="info-right">
+                <h1 class="titulo-Pesca">Salidas Privadas</h1>
+                <div class="fecha-Pesca">xxxxxxxxxxxx</div>
+                <p class="descripcion-Pesca">Te ofrecemos una maravillosa travesía por el río Mitjorn hasta su llegada al mar.
+                    Ideal para salir a pescar con los más pequeños.</p>
+                <button class="btn-right"><a href="#fishing">saber más</a></button>
+              </div>
+            </div>
+          </section>
+</section> -->
+        
+<!-- Bloque Tipos de Pesca ends --> */
 
 
 

@@ -1,17 +1,28 @@
 
 // JAVASCRIPT NAVBAR
-let menu = document.querySelector('#menu-bars');
+// let menu = document.querySelector('#menu-bars');
+// let navbar = document.querySelector('.navbar');
+
+// menu.onclick = () =>{
+//     navbar.classList.toggle('active');
+//     menu.classList.toggle('fa-times');
+// }
+
+// window.onscroll = () =>{
+//     navbar.classList.remove('active');
+//     menu.classList.remove('fa-times');
+// }
+
+// lllllllllllllllllllll
+let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menu.onclick = () =>{
-    navbar.classList.toggle('active');
-    menu.classList.toggle('fa-times');
+menu.onclick = () => {
+	menu.classList.toggle("fa-bars");
+	navbar.classList.toggle('open');
 }
 
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-    menu.classList.remove('fa-times');
-}
+
 
 
 // JAVASCRIPT FORMULARIOS
